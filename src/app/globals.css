@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme inline { --font-sans: var(--font-geist-sans); --font-mono: var(--font-geist-mono); --color-primary: #176a48; --color-primary-foreground: #fff; --color-secondary: #e5f2e9; --color-secondary-foreground: #17382b; --color-accent: #f3e6d5; --color-accent-foreground: #17382b; --color-input: #dbe2dc; --color-ring: #176a48; --color-background: #f7f3ea; --color-foreground: #17382b; }
+* { border-color: color-mix(in srgb, #17382b 12%, transparent); }
+html, body { min-height: 100%; }
+body { background: #f7f3ea; color: #17382b; font-feature-settings: "ss01", "ss03", "cv02"; }
+.storefront-hero { background: linear-gradient(115deg, rgba(20,34,27,.98), rgba(30,47,38,.92) 52%, rgba(49,66,55,.94)), repeating-linear-gradient(118deg, rgba(255,255,255,.026) 0 1px, transparent 1px 11px); background-attachment: fixed; }
+.storefront-hero-grid { background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px); background-size: 72px 72px; mask-image: linear-gradient(to bottom, black, transparent 90%); }
+.storefront-hero-orb { position:absolute; border-radius:9999px; filter:blur(1px); pointer-events:none; }
+.storefront-hero-orb-one { width:min(48vw,700px); height:min(48vw,700px); right:-15vw; top:-25vw; background:radial-gradient(circle,rgba(221,190,149,.32),transparent 68%); }
+.storefront-hero-orb-two { width:min(36vw,520px); height:min(36vw,520px); left:34%; bottom:-24vw; background:radial-gradient(circle,rgba(149,174,149,.2),transparent 70%); }
+@media (prefers-reduced-motion:no-preference) { .fade-up { animation: fade-up 520ms ease both; } @keyframes fade-up { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } } }
